@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Assignment-4</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+</head>
+    
+<body> 
+     
+    <header>
+        <div class="cstm-navbar">
+            <nav class="navbar navbar-expand-lg navbar-light  py-4 fixed-top"  id="main-nav">
+                <div class="container">
+                    <a class="navbar-brand cstm-brand" href="#">Strive<span>.</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center gap-5">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="btn cstm-button" type="submit">Get Started</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-section">
+            <div class="carousel-section">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/slider-16.webp" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slider-13.webp" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slider-5.webp" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slider-3.webp" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slider-14.webp" class="w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="hero-content d-flex align-items-center justify-content-center flex-column">
+                <h1>
+                    Building Trust, Driving Growth
+                </h1>
+                <p>
+                    Present your business with confidence using a clean, flexible, and fully responsive template that helps you connect with clients, attract opportunities, and strengthen your brand identity.
+                </p>
+                <button class="btn btn-lg">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 about-heading py-4">
+                    <h2>About</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-6">
+                    <div class="about-img-wrapper">
+                        <img src="./images/about-portrait-2.webp" alt="" class="img-fluid">
+                        <div class="projects">
+                            <p class="num">
+                                345+
+                            </p>
+                            <p class="">
+                                PROJECTS
+                            </p>
+                        </div>
+                        <div class="experience">
+                            <p class="num">
+                                12
+                            </p>
+                            <p class="">
+                                YEARS OF <br> EXPERIENCE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 about-details d-flex flex-column justify-content-center ps-lg-5">
+                    <h2 class="mb-4">
+                        Vestibulum Sagittis Lacinia Augue
+                    </h2>
+                    <p class="mb-4">
+                        Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.
+                    </p>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-container d-flex justify-content-center align-items-center">
+                                <i class="bi bi-globe2"></i>
+                            </div>
+                            <div class="features">
+                                <h4>
+                                    Pellentesque Dapibus
+                                </h4>
+                                <p>
+                                    Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-container d-flex justify-content-center align-items-center">
+                                <i class="bi bi-globe2"></i>
+                            </div>
+                            <div class="features">
+                                <h4>
+                                    Suspendisse Pulvinar
+                                </h4>
+                                <p>
+                                    Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <p>
+                                    Phasellus viverra nulla ut metus varius laoreet quisque rutrum aenean
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <p>
+                                    Etiam ultricies nisi vel augue curabitur ullamcorper ultricies nisi nam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <button class="btn btn-lg cstm-btn-primary">
+                            LEARN MORE
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 services-heading py-4">
+                    <h2>Services</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <div class="row gy-5">
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column services-content">
+                        <div class="services-tag d-flex ">
+                            <span>
+                                Professional Services
+                            </span>
+                        </div>
+
+                        <h2>
+                            Elevating Business Performance Through Strategic Solutions
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius risus sed pellentesque auctor. Phasellus gravida magna at tortor cursus, sit amet suscipit tortor malesuada.
+                        </p>
+                        <div>
+                            <button class="btn">
+                                Request a Consultation
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="services-img-wrapper">
+                        <img src="./images/services-9.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="center-carousel-section">
+        <div class="container">
+
+            <div class="swiper main-card-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-card">
+                            <div class="h-100">
+                                <div class=" d-flex flex-column">
+                                    <div class="icon-container my-3">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+                                    <div class="arrow-link">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                    <h4>
+                                        Financial Strategy Development
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
+                                    </p>
+                                    <div class="numbering">
+                                        01
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-card">
+                            <div class="h-100">
+                                <div class=" d-flex flex-column">
+                                    <div class="icon-container my-3">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    <div class="arrow-link">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                    <h4>
+                                        Market Expansion Advisory
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
+                                    </p>
+                                    <div class="numbering">
+                                        02
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-card">
+                            <div class="h-100">
+                                <div class=" d-flex flex-column">
+                                    <div class="icon-container my-3">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+                                    <div class="arrow-link">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                    <h4>
+                                        Risk Management Solution
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
+                                    </p>
+                                    <div class="numbering">
+                                        03
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-card">
+                            <div class="h-100">
+                                <div class=" d-flex flex-column">
+                                    <div class="icon-container my-3">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    <div class="arrow-link">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                    <h4>
+                                        Innovation & Digital Transformation
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
+                                    </p>
+                                    <div class="numbering">
+                                        04
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-card">
+                            <div class="h-100">
+                                <div class=" d-flex flex-column">
+                                    <div class="icon-container my-3">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="arrow-link">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                    <h4>
+                                        Talent Management Strategy
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
+                                    </p>
+                                    <div class="numbering">
+                                        05
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="d-flex justify-content-end mt-3 cstm-swiper-navigation">
+                <button class="btn btn-outline-dark swiper-prev">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="btn btn-outline-dark swiper-next">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="free-trial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 content">
+                    <div class="badge mb-4">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        Transform Your Business
+                    </div>
+                    <h2>
+                        Ready to Scale Your Corporate Operations?
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="features ">
+                        <div class="d-flex flex-column mt-5">
+                            <div class="feature-item">
+                                <span>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </span>
+                                <p>
+                                    Advanced Analytics Dashboard
+                                </p>
+                            </div>
+                            <div class="feature-item">
+                                <span>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </span>
+                                <p>
+                                    24/7 Enterprise Support
+                                </p>
+                            </div>
+                            <div class="feature-item">
+                                <span>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </span>
+                                <p>
+                                    Custom Integration Solutions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-buttons-section">
+                        <button class="feature-btn-1">
+                            Start Free Trial
+                        </button>
+                        <button class="feature-btn-2">
+                            Schedule Demo
+                        </button>
+                    </div>
+
+                    <div class="review-section">
+                        <p class="mt-4 mb-1">
+                            Trusted by 500+ companies worldwide
+                        </p>
+                        <div class="rating-section">
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                4.9/5 (2,300+ reviews)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-content-section py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column content">
+                        <h2>
+                            Powerful Features for Modern Business
+                        </h2>
+                        <p>
+                            Streamline your operations with our comprehensive suite of business tools designed to boost productivity and drive growth.
+                        </p>
+
+                        <div class="performance-card">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16" style="height: 30px; width: auto;">
+                                    <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+                                    <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+                                    <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h4>
+                                    Lightning Fast Performance
+                                </h4>
+                                <p>
+                                    Experience blazing fast loading times and seamless user interactions that keep your team productive.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button>
+                                Get Strarted Today
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row gx-3 gy-3 pb-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h4 class="text-center">
+                                    Enterprise Security
+                                </h4>
+                                <p class="text-center">
+                                    Bank-level encryption and advanced security protocols to protect your sensitive business data.                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                <h4 class="text-center">
+                                    Real-time Analytics
+                                </h4>
+                                <p class="text-center">
+                                    Get instant insights with comprehensive dashboards and detailed reporting capabilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gx-3 gy-3 pb-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h4 class="text-center">
+                                    Team Collaboration
+                                </h4>
+                                <p class="text-center">
+                                    Foster seamless teamwork with integrated communication and project management tools.                                
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-cloud-arrow-up"></i>
+                                </div>
+                                <h4 class="text-center">
+                                    Enterprise Security
+                                </h4>
+                                <p class="text-center">
+                                    Bank-level encryption and advanced security protocols to protect your sensitive business data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gx-3 gy-3">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-gear"></i>
+                                </div>
+                                <h4 class="text-center">
+                                    Enterprise Security
+                                </h4>
+                                <p class="text-center">
+                                    Bank-level encryption and advanced security protocols to protect your sensitive business data.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-headset"></i>
+                                </div>
+                                <h4 class="text-center">
+                                    Enterprise Security
+                                </h4>
+                                <p class="text-center">
+                                    Bank-level encryption and advanced security protocols to protect your sensitive business data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-carousel-section">
+        <div class="container">
+
+            <div class="swiper card-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-5.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-6.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-7.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-7.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-8.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="c h-100">
+                            <div class="about-img-wrapper">
+                                <img src="./images/clients-2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="portfolio-cards-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 portfolio-heading py-4 px-4">
+                    <h2 class="mb-2">Services</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <nav class="portfolio-nav-section">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                            <button class="nav-link" id="nav-operations-tab" data-bs-toggle="tab" data-bs-target="#nav-operation" type="button" role="tab" aria-controls="nav-operation" aria-selected="false">Operations</button>
+                            <button class="nav-link" id="nav-technology-tab" data-bs-toggle="tab" data-bs-target="#nav-technology" type="button" role="tab" aria-controls="nav-technology" aria-selected="false">Technology</button>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content tab-content-section" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="container">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-1.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Business Growth Strategy
+                                                    </h4>
+                                                    <p>
+                                                        Strategic Planning
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Strategy
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Consulting
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-2.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Financial Restructuring
+                                                    </h4>
+                                                    <p>
+                                                        Financial Advisory
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Finance
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Investment
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-3.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Supply Chain Optimization
+                                                    </h4>
+                                                    <p>
+                                                        Operations Management
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Operations
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Logistics
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-4.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Digital Transformation
+                                                    </h4>
+                                                    <p>
+                                                        Technology Consulting
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Technology
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Innovation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-5.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Market Expansion
+                                                    </h4>
+                                                    <p>
+                                                        Strategic Planning
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Strategy
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Growth
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-6.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Investment Strategy
+                                                    </h4>
+                                                    <p>
+                                                        Financial Advisory
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Finance
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Investment
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-1.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Business Growth Strategy
+                                                    </h4>
+                                                    <p>
+                                                        Strategic Planning
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Strategy
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Consulting
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-5.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Market Expansion
+                                                    </h4>
+                                                    <p>
+                                                        Strategic Planning
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Strategy
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Growth
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="container">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-2.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Financial Restructuring
+                                                    </h4>
+                                                    <p>
+                                                        Financial Advisory
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Finance
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Investment
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-6.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Investment Strategy
+                                                    </h4>
+                                                    <p>
+                                                        Financial Advisory
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Finance
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Investment
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-operation" role="tabpanel" aria-labelledby="nav-operation-tab">
+                            <div class="container">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-3.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Supply Chain Optimization
+                                                    </h4>
+                                                    <p>
+                                                        Operations Management
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Operations
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Logistics
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-technology" role="tabpanel" aria-labelledby="nav-technology-tab">
+                            <div class="container">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-img-wrapper">
+                                                    <img src="./images/portfolio-4.webp" alt="" class="img-fluid">
+                                                    <div class="img-overlay">
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-plus"></i>
+                                                        </a>
+                                                        <a href="" class="icon-container">
+                                                            <i class="bi bi-link"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-card-content">
+                                                    <h4>
+                                                        Digital Transformation
+                                                    </h4>
+                                                    <p>
+                                                        Technology Consulting
+                                                    </p>
+
+                                                    <div class="portfolio-card-tags">
+                                                        <div class="card-tag">
+                                                            Technology
+                                                        </div>
+                                                        <div class="card-tag">
+                                                            Innovation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="portfolio-button">
+                            View All Case Studies
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pricing-section">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-12 pricing-heading py-4 px-4">
+                    <h2 class="mb-2">Pricing</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <div class="row gy-3">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="svg-container">
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h4>
+                            Standard
+                        </h4>
+                        <div class="price">
+                            <span class="currency">
+                                $
+                            </span>
+                            9
+                            <span class="period">
+                                /month
+                            </span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Vestibulum ante ipsum primis
+                            </li>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Fusce vulputate eleifend
+                            </li>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Fusce vulputate eleifend
+                            </li>
+                        </ul>
+
+                        <button>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pricing-card recommended-card">
+                        <div class="svg-container">
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h4>
+                            Standard
+                        </h4>
+                        <div class="price">
+                            <span class="currency">
+                                $
+                            </span>
+                            9
+                            <span class="period">
+                                /month
+                            </span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Vestibulum ante ipsum primis
+                            </li>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Fusce vulputate eleifend
+                            </li>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Fusce vulputate eleifend
+                            </li>
+                        </ul>
+
+                        <button class="recommended-button">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="svg-container">
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h4>
+                            Standard
+                        </h4>
+                        <div class="price">
+                            <span class="currency">
+                                $
+                            </span>
+                            9
+                            <span class="period">
+                                /month
+                            </span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Vestibulum ante ipsum primis
+                            </li>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Fusce vulputate eleifend
+                            </li>
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Fusce vulputate eleifend
+                            </li>
+                        </ul>
+
+                        <button>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="faq-section py-lg-5 ">
+        <div class="container">
+             <div class="row px-lg-5">
+                <div class="col-12 d-flex gap-5 flex-column">
+                    <nav class="faq-nav-section">
+                        <div class="nav nav-tabs my-4" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                <i class="bi bi-question-circle me-2"></i>
+                                General
+                            </button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <i class="bi bi-credit-card me-2"></i>
+                                Pricing
+                            </button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <i class="bi bi-headset me-2"></i>
+                                Support
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content tab-content-section" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div>   
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+
+                                            <span class="num">1</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            <span class="num">2</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <span class="num">3</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div>   
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="num">1</span>
+                                            <span class="question">
+                                                Ac odio tempor orci dapibus ultrices in iaculis?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            <span class="num">2</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <span class="num">3</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div>   
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="num">1</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            <span class="num">2</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <span class="num">3</span>
+                                            <span class="question">
+                                                Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?
+                                            </span>
+                                        </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 gy-4">
+                    <div class="further-q-section">
+                        <p class="text-center">
+                            Still have questions? We're here to help!
+                        </p>
+                        <div>
+                            <button>
+                                Contact Support
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="team-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 team-heading py-4 px-4">
+                    <h2 class="mb-2">Team</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <div class="row gx-3 gy-3">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-m-8.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Marcus Rodriguez
+                        </h3>
+                        <div class="designation">
+                            Chief Technology Officer
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-f-12.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Lisa Park
+                        </h3>
+                        <div class="designation">
+                            UX Research Manager
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-m-3.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Ryan Mitchell
+                        </h3>
+                        <div class="designation">
+                            DevOps Engineer
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-f-7.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Jessica Williams
+                        </h3>
+                        <div class="designation">
+                            Data Analytics Lead
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-m-11.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Alex Johnson
+                        </h3>
+                        <div class="designation">
+                            Senior Full-Stack Developer
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-f-4.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Sarah Chen
+                        </h3>
+                        <div class="designation">
+                            Head of Product Design
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-m-14.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            David Kumar
+                        </h3>
+                        <div class="designation">
+                            VP of Marketing
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="team-member-card">
+                        <div class="img-wrapper">
+                            <img src="./images/person-f-9.webp" alt="">
+                            <div class="icons">
+                                <div class="icon-container">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Emma Thompson
+                        </h3>
+                        <div class="designation">
+                            Customer Success Lead
+                        </div>
+                        <p>
+                            Passionate about building scalable solutions and leading innovative development teams to create exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-post-section pb-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12 blog-post-heading py-4 px-4">
+                    <h2 class="mb-2">Recent Blog Posts</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div class="blog-post-card-lg pb-4">
+                                <div class="img-container">
+                                    <img src="./images/blog-post-7.webp" alt="">
+                                </div>
+                                <div class="d-flex m-3">
+                                    <a href="" class="blog-tag">
+                                        Technology
+                                    </a>
+                                    <span class="created-on ms-auto">
+                                        Dec 18, 2024
+                                    </span>
+                                </div>
+                                <h2>
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit mauris
+                                </h2>
+                                <p>
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="profile">
+                                        <img src="./images/person-m-8 (1).webp" alt="">
+                                        <div class="d-flex flex-column">
+                                            <span class="name">
+                                                Marcus Johnson
+                                            </span>
+                                            <span class="status">
+                                                5 min read
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="read-more-btn ms-auto">
+                                        <span>Read more</span> 
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div class="blog-post-card-lg pb-4">
+                                <div class="img-container">
+                                    <img src="./images/blog-post-3.webp" alt="">
+                                </div>
+                                <div class="d-flex m-3">
+                                    <a href="" class="blog-tag">
+                                        Technology
+                                    </a>
+                                    <span class="created-on ms-auto">
+                                        Dec 18, 2024
+                                    </span>
+                                </div>
+                                <h2>
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit mauris
+                                </h2>
+                                <p>
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="profile">
+                                        <img src="./images/person-f-7 (1).webp" alt="">
+                                        <div class="d-flex flex-column">
+                                            <span class="name">
+                                                Marcus Johnson
+                                            </span>
+                                            <span class="status">
+                                                5 min read
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="read-more-btn ms-auto">
+                                        <span>Read more</span> 
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div class="blog-post-card-sm">
+                                <div class="img-container">
+                                    <img src="./images/blog-post-5.webp" alt="" class="img-fluid">
+                                </div>
+                                <a href="" class="blog-tag">
+                                    Bussiness
+                                </a>
+                                <h4>
+                                    Voluptate velit esse cillum dolore eu fugiat nulla
+                                </h4>
+                                <p>
+                                    <span class="posted-by">
+                                        By Jessica Kim
+                                    </span>
+                                    <span class="posted-on">
+                                        Dec 15, 2024
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="blog-post-card-sm">
+                                <div class="img-container">
+                                    <img src="./images/blog-post-9.webp" alt="" class="img-fluid">
+                                </div>
+                                <a href="" class="blog-tag">
+                                    Marketing
+                                </a>
+                                <h4>
+                                    Voluptate velit esse cillum dolore eu fugiat nulla
+                                </h4>
+                                <p>
+                                    <span class="posted-by">
+                                        By Alex Chen
+                                    </span>
+                                    <span class="posted-on">
+                                        Dec 29, 2024
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="blog-post-card-sm">
+                                <div class="img-container">
+                                    <img src="./images/blog-post-6.webp" alt="" class="img-fluid">
+                                </div>
+                                <a href="" class="blog-tag">
+                                    Design
+                                </a>
+                                <h4>
+                                    Voluptate velit esse cillum dolore eu fugiat nulla
+                                </h4>
+                                <p>
+                                    <span class="posted-by">
+                                        By David Park
+                                    </span>
+                                    <span class="posted-on">
+                                        Dec 12, 2024
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="blog-post-card-sm">
+                                <div class="img-container">
+                                    <img src="./images/blog-post-8.webp" alt="" class="img-fluid">
+                                </div>
+                                <a href="" class="blog-tag">
+                                    Tech
+                                </a>
+                                <h4>
+                                    Voluptate velit esse cillum dolore eu fugiat nulla
+                                </h4>
+                                <p>
+                                    <span class="posted-by">
+                                        By Sarah Miller
+                                    </span>
+                                    <span class="posted-on">
+                                        Dec 15, 2024
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-section py-4">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 contact-section-heading py-4 px-4">
+                    <h2 class="mb-2">Contact</h2>
+                    <p>
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <div class="row gy-5 pb-4">
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9772084439987!2d77.22007397530065!3d28.630445175665987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd36b06e44df%3A0x7596f940c26b66fc!2sStatesman%20House!5e0!3m2!1sen!2sin!4v1768212411226!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row mb-3 gx-3 gy-3">
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4>
+                                        Location
+                                    </h4>
+                                    <p>
+                                        8721 Broadway Avenue, New York, NY 10023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4>
+                                        Email
+                                    </h4>
+                                    <p>
+                                        info@examplecompany.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-3 gy-3">
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4>
+                                        Call
+                                    </h4>
+                                    <p>
+                                        +1 (212) 555-7890
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <div class="svg-container">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h4>
+                                        Open Hours
+                                    </h4>
+                                    <p>
+                                        Monday-Friday: 9AM - 6PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="contact-form-section">
+                                <div class="contact-form-heading">
+                                    <h3>
+                                        Get in Touch
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.
+                                    </p>
+                                </div>
+
+                                <div class="contact-form">
+                                    <form>
+                                        <div class="row g-3 mb-3">
+                                            <div class="col-12 col-md-6">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="email" class="form-control" placeholder="Your Email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-md-row flex-column justify-content-center gap-2">
+                                            <div class="submit-button">
+                                                <button>
+                                                    Send Message
+                                                </button>
+                                            </div>
+
+                                            <div class="icons ms-md-auto">
+                                                <div class="icon-container">
+                                                    <i class="bi bi-twitter"></i>
+                                                </div>
+                                                <div class="icon-container">
+                                                    <i class="bi bi-facebook"></i>
+                                                </div>
+                                                <div class="icon-container">
+                                                    <i class="bi bi-instagram"></i>
+                                                </div>
+                                                <div class="icon-container">
+                                                    <i class="bi bi-linkedin"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="d-flex">
+                                        
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-section ">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-5 col-lg-4">
+                    <h2>
+                        Strive
+                    </h2>
+                    <p>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula.
+                    </p>
+                    <h5>
+                        Stay Updated
+                    </h5>
+                    <div class="footer-form">
+                        <div class="input-group">
+                            <div class="form-outline d-flex w-100" data-mdb-input-init>
+                                <input id="search-input" type="search" id="form1" class="form-control" placeholder="Enter Your Email" />
+                                <button id="search-button" type="button" class="btn btn-primary">
+                                    <i class="bi bi-send"></i>
+                            </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h3>
+                        Company
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            About
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Careers
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Press
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Blog
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Contacts
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h3>
+                        Solutions
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Digital Strategy
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Cloud computing
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Data Analytics
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            AI Analytics
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            Cybersecurity
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        Get in Touch
+                    </h3>
+                    <div class="d-flex flex-column">
+                        <div class="details">
+                            <div class="icon-container">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <p>
+                                2847 Maple Avenue <br>
+                                Los Angeles, CA 90210 <br>
+                                United States
+                            </p>
+                        </div>
+
+                        <div class="details">
+                            <div class="icon-container">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <p>
+                                +1 (555) 987-6543
+                            </p>
+                        </div>
+
+                        <div class="details">
+                            <div class="icon-container">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <p>
+                                contact@example.com
+                            </p>
+                        </div>
+
+                        <div class="icons">
+                            <div class="icon-container">
+                                <i class="bi bi-facebook"></i>
+                            </div>
+                            <div class="icon-container">
+                                <i class="bi bi-twitter"></i>
+                            </div>
+                            <div class="icon-container">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div class="icon-container">
+                                <i class="bi bi-youtube"></i>
+                            </div>
+                            <div class="icon-container">
+                                <i class="bi bi-github"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-footer">
+            <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <p>
+                    © Copyright Strive All Rights Reserved
+                </p>
+                <div class="ms-md-auto d-flex flex-column">
+                    <div class="links d-flex">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms of Service</a>
+                        <a href="">Cookie Policy</a>
+                    </div>
+                    <p class="credits text-center text-md-end">
+                        Designed by 
+                        <span>BootstrapMade</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const nav = document.getElementById("main-nav");
+            const scrollTrigger = 50; // px from top before adding shadow
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > scrollTrigger) {
+                    nav.classList.add("scrolled");
+                } else {
+                    nav.classList.remove("scrolled");
+                }
+            });
+        });
+
+
+
+        new Swiper('.logo-carousel-section .card-swiper', {
+            slidesPerView: 6,
+            spaceBetween: 10,
+            slidesPerGroup: 1,   // 👈 move ONE card per swipe
+
+            loop: true,
+
+            autoplay: {
+            delay: 3000,       // 👈 3s like bootstrap
+            disableOnInteraction: false
+            },
+
+            speed: 600,          // 👈 smooth slide speed
+
+            navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev'
+            },
+
+            breakpoints: {
+            0: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 4
+            },
+            1200: {
+                slidesPerView: 6
+            }
+            }
+        });
+
+
+
+        new Swiper('.main-card-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            slidesPerGroup: 1,   // 👈 move ONE card per swipe
+
+            loop: true,
+
+            autoplay: {
+            delay: 4000,       // 👈 3s like bootstrap
+            disableOnInteraction: false
+            },
+
+            speed: 600,          // 👈 smooth slide speed
+
+            navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev'
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3
+                }
+            }
+        });
+ 
+
+        
+    </script>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
