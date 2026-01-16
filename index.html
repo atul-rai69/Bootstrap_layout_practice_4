@@ -19,14 +19,14 @@
      
     <header>
         <div class="cstm-navbar">
-            <nav class="navbar navbar-expand-lg navbar-light  py-4 fixed-top"  id="main-nav">
+            <nav class="navbar navbar-expand-lg navbar-light  py-2 fixed-top"  id="main-nav">
                 <div class="container">
                     <a class="navbar-brand cstm-brand" href="#">Strive<span>.</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center gap-5">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Home</a>
                             </li>
@@ -87,43 +87,52 @@
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
 
-
-            <div class="hero-content d-flex align-items-center justify-content-center flex-column">
-                <h1>
-                    Building Trust, Driving Growth
-                </h1>
-                <p>
-                    Present your business with confidence using a clean, flexible, and fully responsive template that helps you connect with clients, attract opportunities, and strengthen your brand identity.
-                </p>
-                <button class="btn btn-lg">
-                    Get Started
-                </button>
+            <div class="d-flex justify-content-center align-items-center h-100" style="padding-top: 97px;">
+                <div class="hero-content d-flex justify-content-center flex-column">
+                    <h1>
+                        Building Trust, Driving Growth
+                    </h1>
+                    <p>
+                        Present your business with confidence using a clean, flexible, and fully responsive template that helps you connect with clients, attract opportunities, and strengthen your brand identity.
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <button class="btn btn-lg">
+                            Get Started
+                        </button>
+                    </div>
+                    
+                </div>
             </div>
+            
         </div>
     </header>
 
     <div class="about-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 about-heading py-4">
+                <div class="col-12 about-heading pb-4">
                     <h2>About</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                     </p>
                 </div>
             </div>
-            <div class="row gy-5">
-                <div class="col-lg-6">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 position-relative">
                     <div class="about-img-wrapper">
                         <img src="./images/about-portrait-2.webp" alt="" class="img-fluid">
                         <div class="projects">
@@ -147,7 +156,7 @@
 
 
 
-                <div class="col-lg-6 about-details d-flex flex-column justify-content-center ps-lg-5">
+                <div class="col-lg-6 about-details d-flex flex-column justify-content-center">
                     <h2 class="mb-4">
                         Vestibulum Sagittis Lacinia Augue
                     </h2>
@@ -155,7 +164,7 @@
                         Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.
                     </p>
                     <div class="mb-4">
-                        <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex  gap-3">
                             <div class="icon-container d-flex justify-content-center align-items-center">
                                 <i class="bi bi-globe2"></i>
                             </div>
@@ -168,7 +177,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex  gap-3">
                             <div class="icon-container d-flex justify-content-center align-items-center">
                                 <i class="bi bi-globe2"></i>
                             </div>
@@ -182,7 +191,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="d-flex">
+                            <div class="d-flex gap-2 align-items-center mb-2">
                                 <div class="icon">
                                     <i class="bi bi-check-circle"></i>
                                 </div>
@@ -190,7 +199,7 @@
                                     Phasellus viverra nulla ut metus varius laoreet quisque rutrum aenean
                                 </p>
                             </div>
-                            <div class="d-flex">
+                            <div class="d-flex gap-2 align-items-center">
                                 <div class="icon">
                                     <i class="bi bi-check-circle"></i>
                                 </div>
@@ -201,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-3">
+                    <div class="mt-4">
                         <button class="btn btn-lg cstm-btn-primary">
                             LEARN MORE
                         </button>
@@ -213,10 +222,10 @@
     </div>
 
 
-    <div class="services-section">
+    <div class="services-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 services-heading py-4">
+                <div class="col-12 services-heading pb-5">
                     <h2>Services</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
@@ -261,7 +270,7 @@
 
 
     <div class="center-carousel-section">
-        <div class="container">
+        <div class="container ">
 
             <div class="swiper main-card-swiper">
                 <div class="swiper-wrapper">
@@ -339,54 +348,6 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-card">
-                            <div class="h-100">
-                                <div class=" d-flex flex-column">
-                                    <div class="icon-container my-3">
-                                        <i class="bi bi-graph-up-arrow"></i>
-                                    </div>
-                                    <div class="arrow-link">
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <h4>
-                                        Innovation & Digital Transformation
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
-                                    </p>
-                                    <div class="numbering">
-                                        04
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-card">
-                            <div class="h-100">
-                                <div class=" d-flex flex-column">
-                                    <div class="icon-container my-3">
-                                        <i class="bi bi-people-fill"></i>
-                                    </div>
-                                    <div class="arrow-link">
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <h4>
-                                        Talent Management Strategy
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula magna eget lectus varius, at finibus massa condimentum.
-                                    </p>
-                                    <div class="numbering">
-                                        05
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -411,7 +372,11 @@
             <div class="row">
                 <div class="col-lg-6 content">
                     <div class="badge mb-4">
-                        <i class="bi bi-rocket-takeoff"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16" style="height: 16px; width: auto;">
+                            <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"></path>
+                            <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"></path>
+                            <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"></path>
+                        </svg>
                         Transform Your Business
                     </div>
                     <h2>
@@ -473,9 +438,9 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p>
+                            <span>
                                 4.9/5 (2,300+ reviews)
-                            </p>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -487,7 +452,7 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-5">
-                    <div class="d-flex flex-column content">
+                    <div class="d-flex flex-column content pe-4">
                         <h2>
                             Powerful Features for Modern Business
                         </h2>
@@ -624,7 +589,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-2.webp" alt="">
+                                <img src="./images/clients-2.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -632,7 +597,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-3.webp" alt="">
+                                <img src="./images/clients-3.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -640,7 +605,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-5.webp" alt="">
+                                <img src="./images/clients-5.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -648,7 +613,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-6.webp" alt="">
+                                <img src="./images/clients-6.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -656,7 +621,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-7.webp" alt="">
+                                <img src="./images/clients-7.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -664,7 +629,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-7.webp" alt="">
+                                <img src="./images/clients-7.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -672,7 +637,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-8.webp" alt="">
+                                <img src="./images/clients-8.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -680,7 +645,7 @@
                     <div class="swiper-slide">
                         <div class="c h-100">
                             <div class="about-img-wrapper">
-                                <img src="./images/clients-2.webp" alt="">
+                                <img src="./images/clients-2.webp" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -690,11 +655,11 @@
         </div>
     </div>
 
-    <div class="portfolio-cards-section py-4">
+    <div class="portfolio-cards-section pt-4 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 portfolio-heading py-4 px-4">
-                    <h2 class="mb-2">Services</h2>
+                <div class="col-12 portfolio-heading py-4 px-2">
+                    <h2>Portfolio</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                     </p>
@@ -705,9 +670,9 @@
                 <div class="col-12">
                     <nav class="portfolio-nav-section">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Strategy</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Finance</button>
                             <button class="nav-link" id="nav-operations-tab" data-bs-toggle="tab" data-bs-target="#nav-operation" type="button" role="tab" aria-controls="nav-operation" aria-selected="false">Operations</button>
                             <button class="nav-link" id="nav-technology-tab" data-bs-toggle="tab" data-bs-target="#nav-technology" type="button" role="tab" aria-controls="nav-technology" aria-selected="false">Technology</button>
 
@@ -715,7 +680,7 @@
                     </nav>
                     <div class="tab-content tab-content-section" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div class="container">
+                            <div>
                                 <div>
                                     <div class="row">
                                         <div class="col-lg-4">
@@ -1177,8 +1142,8 @@
     <div class="pricing-section">
         <div class="container py-4">
             <div class="row">
-                <div class="col-12 pricing-heading py-4 px-4">
-                    <h2 class="mb-2">Pricing</h2>
+                <div class="col-12 pricing-heading py-4">
+                    <h2>Pricing</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                     </p>
@@ -1315,8 +1280,8 @@
 
     <div class="faq-section py-lg-5 ">
         <div class="container">
-             <div class="row px-lg-5">
-                <div class="col-12 d-flex gap-5 flex-column">
+             <div class="row justify-content-center">
+                <div class="col-lg-10 d-flex gap-5 flex-column">
                     <nav class="faq-nav-section">
                         <div class="nav nav-tabs my-4" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
@@ -1389,17 +1354,19 @@
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <div>   
-                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion" id="accordionTwo">
                                     <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                        <h2 class="accordion-header" id="accordionTwo-headingOne">
+
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionTwo-collapseOne" aria-expanded="false" aria-controls="accordionTwo-collapseOne">
+
                                             <span class="num">1</span>
                                             <span class="question">
-                                                Ac odio tempor orci dapibus ultrices in iaculis?
+                                                Ac odio tempor orci dapibus ultrices in iaculis? data
                                             </span>
                                         </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div id="accordionTwo-collapseOne" class="accordion-collapse collapse" aria-labelledby="accordionTwo-headingOne">
                                             <div class="accordion-body">
                                                 <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
@@ -1492,7 +1459,7 @@
                         
                     </div>
                 </div>
-                <div class="col-12 gy-4">
+                <div class="col-lg-10 gy-4">
                     <div class="further-q-section">
                         <p class="text-center">
                             Still have questions? We're here to help!
@@ -1512,9 +1479,9 @@
 
     <div class="team-section">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 team-heading py-4 px-4">
-                    <h2 class="mb-2">Team</h2>
+            <div class="row">
+                <div class="col-12 team-heading pb-5">
+                    <h2>Team</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                     </p>
@@ -1758,11 +1725,11 @@
         </div>
     </div>
 
-    <div class="blog-post-section pb-5">
+    <div class="blog-post-section py-5">
         <div class="container">
-            <div class="row my-5">
-                <div class="col-12 blog-post-heading py-4 px-4">
-                    <h2 class="mb-2">Recent Blog Posts</h2>
+            <div class="row">
+                <div class="col-12 blog-post-heading pb-5">
+                    <h2>Recent Blog Posts</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                     </p>
@@ -1949,10 +1916,10 @@
     </div>
 
 
-    <div class="contact-section py-4">
+    <div class="contact-section py-5">
         <div class="container">
-            <div class="row py-5">
-                <div class="col-12 contact-section-heading py-4 px-4">
+            <div class="row">
+                <div class="col-12 contact-section-heading pb-4">
                     <h2 class="mb-2">Contact</h2>
                     <p>
                         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
@@ -2318,7 +2285,7 @@
             loop: true,
 
             autoplay: {
-            delay: 4000,       // 👈 3s like bootstrap
+            delay:3000,       // 👈 3s like bootstrap
             disableOnInteraction: false
             },
 
