@@ -18,12 +18,11 @@ body{
     width: 7% !important;
 }
 
-.cstm-navbar{
-
+.cstm-navbar .navbar{
+    border-bottom: 1px solid color-mix(in srgb, #ffffff, transparent 90%);
 }
 .scrolled{
     background-color: #5b5b5b !important;
-    opacity: 0.8;
 }
 
 
@@ -33,34 +32,35 @@ body{
     font-weight: 500;
 }
 .cstm-navbar .cstm-brand span{
-    color: rgb(234, 124, 0);
     font-size: 30px;
-    font-weight: 500;
+    color: #ea7c00;
+    margin-left: 2px;
+    font-weight: 700;
 }
 .cstm-navbar ul li:hover .nav-link{
     color: white !important;
 }
 .cstm-navbar ul .nav-link{
-    overflow: hidden;
     position: relative;
     margin-inline: 0;
     padding-inline: 0 !important;
+    line-height: 22px;
 }
 .cstm-navbar ul .nav-link::before{
     content: "";
     position: absolute;
-    left: -100% !important;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background-color: rgb(234, 124, 0);
-    z-index: -1;
-    opacity: 0.8;
-    transition: 1s all ease;
+    height: 2px;
+    bottom: -26px;
+    left: 0;
+    background-color: #ea7c00;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .cstm-navbar ul .nav-link:hover::before{
-    left: 0 !important;    
+    visibility: visible;
+    width: 100%;   
 }
 
 
@@ -68,6 +68,10 @@ body{
     color: color(srgb 1 1 1 / 0.7) !important;
     font-size: 15px;
     font-weight: 400;
+    padding: 0;
+}
+.navbar-light .navbar-nav li{
+    padding: 15px 14px;
 }
 .cstm-navbar .cstm-button{
     color: white;
@@ -97,7 +101,7 @@ body{
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgb(6 5 4 / 63%);
+    background-color: color-mix(in srgb, #060606, transparent 30%);;
     z-index: 1;
 }
 .carousel-section .carousel .carousel-inner .carousel-item{
@@ -108,21 +112,37 @@ body{
     width: 100%;
     object-fit: cover;
 }
-
-
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background: none;
+    font-size: 26px;
+    line-height: 0;
+    background: color-mix(in srgb, #ffffff, transparent 80%);
+    color:  color-mix(in srgb, #ffffff, transparent 40%);
+    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none !important;
+    display: flex !important;
+}
+.carousel-control-next-icon i, .carousel-control-prev-icon i{
+    font-size: 28px;
+}
 
 .hero-section .hero-content{
     position: relative;
     z-index: 4;
     height: 100%;
-    max-width: 850px;
+    max-width: 877px;
     margin: auto;
 }
 .hero-section .hero-content h1{
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    font-size: 3.5rem;
+    font-size: 56px;
     font-weight: 700;
     color: white;
     text-align: center;
@@ -132,7 +152,7 @@ body{
     position: absolute;
     width: 80px;
     height: 4px;
-    background-color: #f4623a;
+    background-color: #ea7c00;
     /* margin: 8px auto 0; */
     border-radius: 0px;
     bottom: 0;
@@ -149,6 +169,9 @@ body{
     .about-section .about-details h2{
         font-size: 1.5rem !important;
     }
+    .hero-content{
+        padding-inline: 50px;
+    }
 }
 
 
@@ -159,7 +182,8 @@ body{
     font-size: 18px;
     max-width: 84ch;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 10px;
+    line-height: 27px;
 }
 .hero-section .hero-content button{
     color: white;
@@ -178,6 +202,14 @@ body{
 
 }
 .about-section .about-heading h2 , .services-section .services-heading h2{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 1px;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
     color: black;
 }
 .about-section .about-heading h2::after , .services-section .services-heading h2::after, .portfolio-cards-section .portfolio-heading h2::after , .pricing-section .pricing-heading h2::after , .team-section .team-heading h2::after , .blog-post-section .blog-post-heading h2::after , .contact-section .contact-section-heading h2::after {
@@ -189,15 +221,16 @@ body{
     margin: 4px 10px;
 }
 .about-section .about-heading p{
-
+    color: color-mix(in srgb, #444444, transparent 50%);
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .about-section .about-img-wrapper{
-    position: relative;
 }
 .about-section .about-img-wrapper img{
     border-radius: 20px;
-    position: relative;
 }
 .about-section .about-img-wrapper .projects{
     background-color: rgb(234, 124, 0);
@@ -211,7 +244,6 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 30px;
-    transform: translateX(25%);
 }
 .about-section .about-img-wrapper .projects p{
     color: white;
@@ -289,6 +321,8 @@ body{
 .about-section .about-details p{
     font-size: 1rem;
     font-weight: 400;
+    line-height: 30px;
+    margin: 0;
 }
 .about-section .about-details .icon-container{
     flex-shrink: 0;
@@ -315,10 +349,14 @@ body{
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
+    font-size:  1rem;
+    font-weight: 400;
+    line-height: 30px;
 }
 .about-section .about-details .icon i{
     color: #ea7c00;
     padding-inline: 3px;
+    font-size: 24px;
 }
 
 .about-details .cstm-btn-primary{
@@ -333,8 +371,10 @@ body{
     transition: all 0.3s ease;
 }
 
-.services-section{
-
+.services-section .services-heading p{
+    font-size: 16px;
+    font-weight: 500;
+    color: color(srgb 0.266667 0.266667 0.266667 / 0.5);
 }
 .services-section .services-tag span{
     display: inline-block;
@@ -349,7 +389,7 @@ body{
 }
 
 .services-section .services-content h2{
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -359,7 +399,7 @@ body{
 .services-section .services-content p{
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-weight: 400;
     color: rgb(68, 68, 68);
 }
@@ -381,6 +421,9 @@ body{
 
 .services-section .services-img-wrapper{
     position: relative;
+    height: 380px;
+    display: flex;
+    justify-content: flex-end;
 }
 .services-section .services-img-wrapper img{
     position: relative;
@@ -401,7 +444,7 @@ body{
     content: "";
     position: absolute;
     bottom: 0;
-    left: -60px;
+    left: 0;
     height: 100px;
     width: 100px;
     background-color: color-mix(in srgb, #ea7c00, transparent 90%);
@@ -479,6 +522,7 @@ body{
 .free-trial-section .feature-item p{
     font-weight: 500;
     color: white;
+    font-size: 20px;
 }
 .free-trial-section .feature-buttons-section{
     display: flex;
@@ -518,7 +562,12 @@ body{
 
 }
 .free-trial-section .review-section p{
-
+    display: block;
+    margin-bottom: 8px !important;
+    font-weight: 500;
+    color: rgba(33, 37, 41, 0.75);
+    opacity: 1;
+    font-size: 18px;
 }
 .free-trial-section .review-section .rating-section{
     display: flex;
@@ -528,14 +577,16 @@ body{
     color: #fbbf24;
     font-size: 14px;
 }
-.free-trial-section .review-section .rating-section p{
-    
+.free-trial-section .review-section .rating-section span{
+    color:color-mix(in srgb, #ffffff, transparent 40%);
+    font-weight: 500;
+    font-size: 14px;
 }
 
 
 
 .feature-content-section{
-    margin-block: 50px;
+    /* margin-block: 50px; */
 }
 .feature-content-section .content{
 
@@ -555,7 +606,7 @@ body{
 .feature-content-section .content p{
     font-size: 1.1rem;
     color: color-mix(in srgb, #444444, transparent 30%);
-    margin-bottom: 2.5rem 40px;
+    margin-bottom: 50px;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -596,9 +647,11 @@ body{
     color: color-mix(in srgb, #444444, transparent 30%);
     margin-bottom: 0;
     line-height: 1.6;
+    font-size: 20px;
+    font-weight: 400;
 }
 .feature-content-section .content .button-container button{
-    padding: 14px 32px;
+    /* padding: 14px 32px;
     border-radius: 60px;
     font-weight: 600;
     font-size: 16px;
@@ -606,7 +659,21 @@ body{
     border: 2px solid transparent;
     background: linear-gradient(135deg, #ea7c00 0%, color-mix(in srgb, #ea7c00, #6c5ce7 50%) 100%);
     color: white;
-    box-shadow: 0 6px 20px  color-mix(in srgb, #ea7c00, transparent 60%);
+    box-shadow: 0 6px 20px  color-mix(in srgb, #ea7c00, transparent 60%); */
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #ea7c00,color-mix(in srgb, #ea7c00, #6a11cb 30%));
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px color-mix(in srgb, #ea7c00, transparent 60%);
+    border: none;
+    font-size: 20px;
 }
 .feature-content-section .content .button-container button:hover{
     transform: translateY(-2px);
@@ -661,6 +728,7 @@ body{
     margin-bottom: 0;
     line-height: 1.6;
     font-size: 0.95rem;
+    font-weight: 400;
 }
 
 
@@ -672,7 +740,7 @@ body{
 .logo-carousel-section .swiper-slide {
     background: transparent;
     border-radius: 12px;
-    padding: 40px;
+    padding-block: 60px;
     font-size: 24px;
     text-align: center;
     display: flex;
@@ -681,13 +749,12 @@ body{
 }
 
 .logo-carousel-section .swiper-slide .about-img-wrapper{
-    width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .logo-carousel-section .swiper-slide .about-img-wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 115px !important;
+    /* margin-right: 100px; */
     transition: 0.3s all ease;
 }
 .logo-carousel-section .swiper-slide .about-img-wrapper img:hover{
@@ -731,7 +798,7 @@ body{
     border: none;
     padding: 8px 20px;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -832,6 +899,7 @@ body{
     color: #ffffff;
     padding: 12px 30px;
     font-weight: 600;
+    font-size: 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
     border: none;
@@ -971,7 +1039,7 @@ body{
     color: #ea7c00;
     border-radius: 50px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s ease;
     border: none;
 }
@@ -1005,7 +1073,8 @@ body{
 .faq-section .faq-nav-section .nav-tabs .nav-link{
     padding: 10px 20px;
     border-radius: 50px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
     color: #444444;
     transition: all 0.3s ease;
     background: transparent;
@@ -1086,6 +1155,8 @@ body{
 }
 .faq-section .further-q-section p{
     font-size: 1.1rem;
+    color: rgb(68, 68, 68);
+    font-weight: 500;
 }
 .faq-section .further-q-section button{
     background-color:#ea7c00;
@@ -1096,6 +1167,7 @@ body{
     transition: all 0.3s ease;
     color: white;
     border: none;
+    font-size: 20px;
 }
 .faq-section .further-q-section button:hover{
     transform: translateY(-8px);
@@ -1409,7 +1481,7 @@ body{
     width: 100%;
     border-radius: 16px;
     overflow: hidden;
-    height: 730px;
+    height: 100%;
 }
 .contact-section .map-wrapper iframe{
     width: 100%;
@@ -1698,20 +1770,27 @@ body{
 
 
 .center-carousel-section{
-    padding-block: 100px;
+    padding-block: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 60px; 
 }
 
-.center-carousel-section .main-card-swiper .swiper-slide .swiper-slide-card{
-    background-color: #ffffff;
+.center-carousel-section .swiper{
+    /* overflow: visible !important; */
+}
+
+.center-carousel-section .main-card-swiper .swiper-slide{
+    background-color: white;
     padding: 32px;
     border-radius: 16px;
     position: relative;
     transition: all 0.4s;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
 }
-.center-carousel-section .main-card-swiper .swiper-slide .swiper-slide-card:hover {
+.center-carousel-section .main-card-swiper .swiper-slide:hover {
     background-color: #ea7c00;
     transform: translateY(-5px);
 }
@@ -1726,7 +1805,7 @@ body{
     margin-bottom: 20px;
     transition: all 0.4s;
 }
-.main-card-swiper .swiper-slide .swiper-slide-card:hover .icon-container{
+.main-card-swiper .swiper-slide:hover .icon-container{
     background-color: white;
 }
 .center-carousel-section .main-card-swiper .swiper-slide .swiper-slide-card .icon-container i{
@@ -1734,7 +1813,7 @@ body{
     color: white;
     transition: all 0.4s;
 }
-.swiper-slide .swiper-slide-card:hover .icon-container i{
+.swiper-slide:hover .icon-container i{
     color: #ea7c00 !important;
 }
 
@@ -1750,12 +1829,12 @@ body{
     border-radius: 50%;
     transform: rotate(-45deg);
     position: absolute;
-    right: -50px;
-    top: -50px;
+    right: -70px;
+    top: -70px;
     transition: all 0.4s;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.swiper-slide .swiper-slide-card:hover .arrow-link{
+.swiper-slide:hover .arrow-link{
     top: 16px;
     right: 16px;
     background-color: white;
@@ -1768,7 +1847,7 @@ body{
     margin-bottom: 15px;
     color: black;
 }
-.swiper-slide .swiper-slide-card:hover h4{
+.swiper-slide:hover h4{
     color: white !important;
 }
 .swiper-slide .swiper-slide-card p{
@@ -1777,7 +1856,7 @@ body{
     margin-bottom: 20px;
     transition: all 0.4s;
 }
-.swiper-slide .swiper-slide-card:hover p{
+.swiper-slide:hover p{
     color: white;
 }
 .swiper-slide .swiper-slide-card .numbering{
@@ -1788,7 +1867,7 @@ body{
     font-weight: 500;
     transition: all 0.4s;
 }
-.swiper-slide .swiper-slide-card:hover .numbering{
+.swiper-slide:hover .numbering{
     color: white;
     padding-left: 0;
 }
@@ -1802,7 +1881,7 @@ body{
     background-color: #ea7c00;
     transition: all 0.4s;
 }
-.swiper-slide .swiper-slide-card:hover .numbering::after{
+.swiper-slide:hover .numbering::after{
     background-color: white;
     left: 30px;
 }
